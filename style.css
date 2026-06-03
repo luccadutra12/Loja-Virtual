@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eef2f1;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    align-items: center;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+header h1 {
+    color: #7ed957;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7ed957;
+}
+
+.banner {
+    align-items: center;
+    background: linear-gradient(135deg, #111 0%, #1f7a3f 100%);
+    color: white;
+    display: flex;
+    min-height: 360px;
+    padding: 55px 8%;
+}
+
+.banner-texto {
+    max-width: 650px;
+}
+
+.tag {
+    color: #7ed957;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.banner h2,
+.titulo-pagina h2,
+.sobre-pagina h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.botao {
+    background: #7ed957;
+    border-radius: 6px;
+    color: #111;
+    display: inline-block;
+    font-weight: bold;
+    padding: 13px 20px;
+    text-decoration: none;
+}
+
+main {
+    padding: 45px 8%;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.titulo-pagina {
+    background: white;
+    border-left: 6px solid #1f7a3f;
+    border-radius: 8px;
+    padding: 28px;
+}
+
+.titulo-pagina p {
+    max-width: 700px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.categorias .caixa {
+    flex: 1 1 240px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    flex: 1 1 240px;
+    padding: 16px;
+}
+
+.card img {
+    background: #d8dedb;
+    border-radius: 8px;
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin: 14px 0 8px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.card strong {
+    color: #1f7a3f;
+    font-size: 20px;
+}
+
+.caixa,
+.sobre-pagina {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+}
+
+.sobre-pagina {
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+}
+
+.sobre-pagina > div {
+    flex: 1;
+}
+
+.sobre-pagina p,
+.caixa p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.chamada {
+    background: linear-gradient(135deg, #1f7a3f, #111);
+    border-radius: 10px;
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+.chamada p {
+    margin-bottom: 18px;
+}
+
+.contato-pagina {
+    align-items: flex-start;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+
+.contato-pagina > div,
+.contato-pagina form {
+    flex: 1;
+}
+
+.contato-pagina h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.contato-pagina p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input,
+textarea {
+    border: 1px solid #cfd8d3;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 12px;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button {
+    background: #1f7a3f;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    header,
+    nav,
+    .sobre-pagina,
+    .contato-pagina {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .banner h2,
+    .titulo-pagina h2,
+    .sobre-pagina h2 {
+        font-size: 30px;
+    }
+}
